@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Presupuesto - Resultado de Búsqueda</title>
+</head>
+<body>
+    <h1>Registro de Presupuesto - Resultado de Búsqueda</h1>
+    {% if presupuesto %}
+        <p>Nombre: {{ presupuesto.nombre.decode('utf-8') }}</p>
+        <p>Cantidad: {{ presupuesto.cantidad.decode('utf-8') }}</p>
+    {% else %}
+        <p>No se encontraron resultados para la búsqueda.</p>
+    {% endif %}
+</body>
+</html>
+
